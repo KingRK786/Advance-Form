@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Subquestion Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="questionForm">
+        <div id="questionsContainer">
+            <!-- Main Question 1 -->
+            <div class="question">
+                <label for="question1">Question 1:</label>
+                <input type="text" name="question1" required>
+                <div class="subquestions">
+                    <button type="button" class="addSubQuestion" onclick="addSubQuestion(this)">Add Subquestion</button>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="addQuestionButton" onclick="addQuestion()">Add New Question</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
