@@ -15,15 +15,28 @@
             <div class="question">
                 <label for="question1">Question 1:</label>
                 <input type="text" name="question1" required>
-                <div class="subquestions">
-                    <button type="button" class="addSubQuestion" onclick="addSubQuestion(this)">Add Subquestion</button>
+                <div class="answer">
+                    <label>Answer:</label>
+                    <input type="text" name="answer1" required>
                 </div>
+                <div class="subquestions">
+                    <div class="subquestion">
+                        <label>Subquestion:</label>
+                        <input type="text" name="subquestion1[]" required>
+                        <div class="answer">
+                            <label>Answer:</label>
+                            <input type="text" name="answer1[]" required>
+                        </div>
+                        <button type="button" class="removeSubQuestion"
+                            onclick="removeSubQuestion(this)">Remove</button>
+                    </div>
+                </div>
+                <button type="button" class="addSubQuestion" onclick="addSubQuestion(this)">Add Subquestion</button>
             </div>
         </div>
         <button type="button" id="addQuestionButton" onclick="addQuestion()">Add New Question</button>
         <button type="submit">Submit</button>
     </form>
-
     <script src="script.js"></script>
 </body>
 

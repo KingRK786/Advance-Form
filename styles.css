@@ -3,14 +3,82 @@ body {
     margin: 20px;
 }
 
+form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .question {
     margin-bottom: 20px;
 }
 
-.subquestions {
-    margin-left: 20px;
+.subquestion {
+    margin-bottom: 10px;
+}
+
+.answer {
+    margin-top: 5px;
 }
 
 .addSubQuestion {
+    margin-top: 5px;
+}
+
+button[type="submit"],
+button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: #45a049;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-description {
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group .subquestion {
+    margin-left: 20px;
+}
+
+.form-group .addSubQuestion {
+    margin-left: 20px;
     margin-top: 5px;
 }
