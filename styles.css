@@ -3,18 +3,10 @@ body {
     margin: 20px;
 }
 
-form {
-    width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .question {
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
 }
 
 .subquestion {
@@ -29,56 +21,166 @@ form {
     margin-top: 5px;
 }
 
-button[type="submit"],
-button[type="button"] {
-    background-color: #4CAF50;
-    color: #fff;
+/* Global styles */
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 25px;
+    /* min-height: 100vh; */
+    justify-content: center;
+}
+
+/* Container for the entire form */
+.form {
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Title */
+.form h1 {
+    text-align: center;
+    color: #4285f4;
+    margin-bottom: 30px;
+}
+
+/* Question container */
+.question {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Question label */
+.question label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Question input */
+.question input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border-bottom-style: solid;
+    min-width: 25vw;
+
+}
+
+/* Subquestion container */
+.subquestion {
+    margin-bottom: 15px;
+}
+
+/* Subquestion label */
+.subquestion label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    display: block;
+}
+
+/* Subquestion input */
+.subquestion input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    border-bottom-style: solid;
+    min-width: 25vw;
+}
+
+/* Add and Remove buttons */
+.addSubQuestion,
+.removeSubQuestion {
+    background-color: #4285f4;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.removeSubQuestion {
+    background-color: #dc3545;
+    margin-top: 10px;
+    align-items: end;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #4285f4;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-}
-
-button[type="submit"]:hover,
-button[type="button"]:hover {
-    background-color: #45a049;
-}
-
-.form-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.form-description {
-    margin-bottom: 20px;
-    color: #888;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.form-group input[type="text"],
-.form-group input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
+    margin-top: 20px;
 }
 
-.form-group .subquestion {
-    margin-left: 20px;
+/* Add question button */
+#addQuestionButton {
+    background-color: #0f9d58;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
-.form-group .addSubQuestion {
-    margin-left: 20px;
-    margin-top: 5px;
+/* Remove default styling for list elements */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn1 {
+    min-width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.top {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    border-radius: 0 0 30px 30px;
+    background-color: rgb(201, 107, 201);
+}
+
+.form_background {
+    background-color: #ffff;
+    padding: 4%;
+    border-radius: 8px;
+    box-shadow: #f1f1f1;
 }
