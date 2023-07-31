@@ -3,6 +3,16 @@ body {
     margin: 20px;
 }
 
+.title-div {
+    text-align: center;
+    height: 150px;
+    width: 600px;
+    background-color: #FDFEFE;
+    margin: 15px;
+    border-radius: 8px;
+    border-top: 8px solid #6703c4;
+    padding: 25px;
+}
 .question {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -78,7 +88,7 @@ form {
     border: none;
     border-radius: 8px;
     border-bottom-style: solid;
-    min-width: 25vw;
+    min-width: 30vw;
 
 }
 
@@ -126,12 +136,13 @@ form {
 button[type="submit"] {
     background-color: #4285f4;
     color: #ffffff;
-    border: none;
+    border: 20;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
     margin-top: 20px;
+    max-width: 220px;
 }
 
 /* Add question button */
@@ -140,10 +151,11 @@ button[type="submit"] {
     color: #ffffff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
     border-radius: 8px;
     margin-top: 20px;
+    max-width: 180px;
 }
 
 /* Remove default styling for list elements */
@@ -181,6 +193,30 @@ ul {
 .form_background {
     background-color: #ffff;
     padding: 4%;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: #f1f1f1;
+}
+
+.last-div h2 {
+    text-align: center;
+    padding-top: 60px;
+    color: #a2a4a6;
+    font-weight: 300;
+    border-radius: 8px;
+    border-bottom: 10px solid #6703c4;
+}
+
+.term {
+    font-size: 12px;
+    padding-left: 15px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+.never {
+    padding-left: 15px;
+    font-size: 12px;
+    padding-top: 70px;
+    font-weight: 400;
+
 }
