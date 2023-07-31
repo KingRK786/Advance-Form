@@ -9,7 +9,7 @@ Efficiently store form data in a Google Sheet or a database using Google Apps Sc
 
 ## How to Use
 
-Open the index.html file in your web browser to access the form.
+Open the main.html file in your web browser to access the form.
 
 To add a new subquestion, click the "Add Subquestion" button under a main question. To add a new main question, click the "Add New Question" button.
 
